@@ -1,4 +1,21 @@
 <svg class="background">
+  # Background
   <image href="Zac.jpg" />
   <text id="demotext" x="50%" y="50%+15">Hello World!</text>
+  
+  # Buttons
+  <svg id="timers" x="10%" y="10%" width="80%" height="80%" fill="black">
+    <image id="timer1" x="0" y="0" width="33%" height="33%" pointer-events="visible" class="timers" />
+    <image id="timer2" x="33%" y="0" width="34%" height="33%" pointer-events="visible" class="timers" />
+    <image id="timer3" x="67%" y="0" width="33%" height="33%" pointer-events="visible" class="timers" />
+    
+    <image id="timer4" x="0"   y="37%" width="25%" height="25%" pointer-events="visible" class="timers" />
+    <image id="timer5" x="25%" y="37%" width="25%" height="25%" pointer-events="visible" class="timers" />
+    <image id="timer6" x="50%" y="37%" width="25%" height="25%" pointer-events="visible" class="timers" />
+    <image id="timer7" x="75%" y="37%" width="25%" height="25%" pointer-events="visible" class="timers" />
+    
+    <image id="timer8" x="0"   y="66%" width="33%" height="33%" pointer-events="visible" class="timers" />
+    <image id="timer9" x="33%" y="66%" width="34%" height="33%" pointer-events="visible" class="timers" />
+    <image id="timer10" x="67%" y="66%" width="33%" height="33%" pointer-events="visible" class="timers" />
+  </svg>
 </svg>
