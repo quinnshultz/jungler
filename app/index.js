@@ -1,10 +1,31 @@
+import * as document from "document"
+import { inbox } from "file-transfer";
+import * as fs from "fs";
+
 /*
  * Entry point for the watch app
  */
-import * as document from "document"
 let timers = document.getElementsByClassName("timers")
 
 const SUMMONER_SPELL_TIME = 50000; // 5 minutes
+
+let demoText = document.getElementById("demotext");
+demoText.text = "Waiting...";
+
+// Event occurs when new file(s) are received
+inbox.onnewfile = () => {
+  console.log("New file!");
+  let fileName;
+  do {
+    // If there is a file, move it from staging into the application folder
+    fileName = inbox.nextFile();
+    if (fileName) {
+      console.log(`Received File: <${fileName}>`);
+      let data = fs.readFileSync(fileName, "ascii");
+      demoText.text = `Received: ${data}`;
+    }
+  } while (fileName);
+};
 
 // Get click event for each button
 timers.forEach((timer) => {

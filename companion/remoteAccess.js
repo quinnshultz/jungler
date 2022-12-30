@@ -1,7 +1,7 @@
 const API_URL = "https://na1.api.riotgames.com/lol/summoner/v4"
 const API_KEY = ""
 
-async function loadSummoners(summonername) {
+async function loadSummoner(summonername) {
   const playerdataurl = API_URL + '/summoners/by-name/' + summonername
   const response = await fetch(playerdataurl, {
     method: "GET",
@@ -13,6 +13,7 @@ async function loadSummoners(summonername) {
   });
   const summoners = await response.json();  // Parse the returned object
   console.log(summoners)
+  return summoners
 }
 
-export { loadSummoners }
+export { loadSummoner }
