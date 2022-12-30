@@ -7,7 +7,7 @@ import * as fs from "fs";
  */
 let timers = document.getElementsByClassName("timers")
 
-const SUMMONER_SPELL_TIME = 50000; // 5 minutes
+const SUMMONER_SPELL_TIME = 300000; // 5 minutes
 
 let demoText = document.getElementById("demotext");
 demoText.text = "Waiting...";
