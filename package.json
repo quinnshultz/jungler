@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0"
+  },
+  "fitbit": {
+    "appUUID": "34b5298d-32aa-42b2-b067-49197db4ade4",
+    "appType": "app",
+    "appDisplayName": "Jungler",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#8bc34a",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Jungler"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}
